@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Hyperlink</title>
+</head>
+<body>
+	<h1>Hyperlink Example</h1>
+	<p>A hyperlink is indicated by the &#60a&#62 tag like <a href="https://wwww.baidu.com">THIS ONE LINKS TO BAIDU</a>.</p>
+	<p>The 'herf' property defines what resource the hyperlink refers to. It can be a web address like "http://www.baidu.com" in the link above. And it can also be any file in the same folder as this html file like <a href="pic1.jpg">THIS ONE LINKED TO AN IMAGE FILE.</a></p>
+	<p>You need to understand how the url works to make sure the path of file you link with the &#60a&#62 tag. Basicly, there are two types, the <strong>absolute</strong> path and the <strong>relative</strong> path. </p>
+	<p>The absolute path strictly defines where the file is on your machine or the Internet. So if the file itself is moved to another place, or the html page works on a different machine, the absolute link may not function properly. <a href="/Users/guangxichen/Documents/pics/nike.jpg">THIS ABSOLUTE LINK</a> is linked to a file on my Mac as a result you can't see the file when you click the link. And if it is linked to a file on the Internet, make sure the file will always be there for your visitors with time goes by.</p>
+	<p>The relative link takes the folder of this html file as a starting point to look for files. The '.' means where the html file locates. The '/' means enter the folder after it or find the exact file name. <a href="./pics/nike.jpg">THIS LINK</a> demonstrates how to link a file in the subfolder of the htmls file folder. Because it uses a relative path, it works well on any machine as long as you copy and paste the entire file folder. Another useful trick is '..' which means going to the file folder in the upper level of where the html file is.</p>
+	<p>If you would like the browser to <a href="pic1.jpg" target="_blank">OPEN A NEW WINDOW</a> to see the link, set the 'target' property to '_blank' in the &#60a&#62 tag.</p>
+	<p>Sometime you need to let people send emails to you. And link an <a href="mailto:chenguangxi1990@qq.com">EMAIL ADDRESS</a> to a hyperlink on your page may be convenient. It take the 'mailto:yourusername@mailserver.com' in the 'href'. After being clicked, it will open the default email software on your machine with the email address filled in the 'receiver' blanket, typically the Mail App on Mac and the Outlook on Windows.</p>
+	<hr/>
+	<p id='top'>An other type of hyperlink is attatched to not the file elaswhere but the position with the html page itself, using the Anchore and element id. Let's see the example below.</p>
+	<p><a href="#c1">CHAPTER 1</a></p>
+	<p><a href="#c2">CHAPTER 2</a></p>
+	<p><a href="#c3">CHAPTER 3</a></p>
+	<h3 id='c1'>Chapter 1</h3>
+	<p>Chapter conternt. Chapter conternt. Chapter conternt. ChapterChapter conternt. Chapter conternt. Chapter conternt. </p>
+	<p><a href="#top">BACK TO TOP</a></p>
+	<h3 id='c2'>Chapter 2</h3>
+	<p>Chapter conternt. Chapter conternt. Chapter conternt. Chapterconternt. </p>
+	<p><a href="#top">BACK TO TOP</a></p>
+	<h3 id='c3'>Chapter 3</h3>
+	<p>Chapter conternt. Chapter conternt. Chapter conternt. Chapter conternt. Chapter conternt. Chapter conternt. Chapter conternt. Chapter conternt. Chapter conternt. </p>
+	<p><a href="#top">BACK TO TOP</a></p>
+</body>
+</html>
+
+
+
+
