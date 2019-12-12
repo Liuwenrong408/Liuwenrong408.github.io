@@ -1,34 +1,634 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
+
 <head>
-	<title>Hyperlink</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, maximum-scale=1">
+    <title>Home</title>
+    <link rel="icon" href="favicon.png" type="image/png">
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="js/fancybox/jquery.fancybox.css" type="text/css" media="screen" />
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <link href="css/font-awesome.css" rel="stylesheet" type="text/css">
+    <link href="css/animate.css" rel="stylesheet" type="text/css">
 </head>
+
+
 <body>
-	<h1>Hyperlink Example</h1>
-	<p>A hyperlink is indicated by the &#60a&#62 tag like <a href="https://wwww.baidu.com">THIS ONE LINKS TO BAIDU</a>.</p>
-	<p>The 'herf' property defines what resource the hyperlink refers to. It can be a web address like "http://www.baidu.com" in the link above. And it can also be any file in the same folder as this html file like <a href="pic1.jpg">THIS ONE LINKED TO AN IMAGE FILE.</a></p>
-	<p>You need to understand how the url works to make sure the path of file you link with the &#60a&#62 tag. Basicly, there are two types, the <strong>absolute</strong> path and the <strong>relative</strong> path. </p>
-	<p>The absolute path strictly defines where the file is on your machine or the Internet. So if the file itself is moved to another place, or the html page works on a different machine, the absolute link may not function properly. <a href="/Users/guangxichen/Documents/pics/nike.jpg">THIS ABSOLUTE LINK</a> is linked to a file on my Mac as a result you can't see the file when you click the link. And if it is linked to a file on the Internet, make sure the file will always be there for your visitors with time goes by.</p>
-	<p>The relative link takes the folder of this html file as a starting point to look for files. The '.' means where the html file locates. The '/' means enter the folder after it or find the exact file name. <a href="./pics/nike.jpg">THIS LINK</a> demonstrates how to link a file in the subfolder of the htmls file folder. Because it uses a relative path, it works well on any machine as long as you copy and paste the entire file folder. Another useful trick is '..' which means going to the file folder in the upper level of where the html file is.</p>
-	<p>If you would like the browser to <a href="pic1.jpg" target="_blank">OPEN A NEW WINDOW</a> to see the link, set the 'target' property to '_blank' in the &#60a&#62 tag.</p>
-	<p>Sometime you need to let people send emails to you. And link an <a href="mailto:chenguangxi1990@qq.com">EMAIL ADDRESS</a> to a hyperlink on your page may be convenient. It take the 'mailto:yourusername@mailserver.com' in the 'href'. After being clicked, it will open the default email software on your machine with the email address filled in the 'receiver' blanket, typically the Mail App on Mac and the Outlook on Windows.</p>
-	<hr/>
-	<p id='top'>An other type of hyperlink is attatched to not the file elaswhere but the position with the html page itself, using the Anchore and element id. Let's see the example below.</p>
-	<p><a href="#c1">CHAPTER 1</a></p>
-	<p><a href="#c2">CHAPTER 2</a></p>
-	<p><a href="#c3">CHAPTER 3</a></p>
-	<h3 id='c1'>Chapter 1</h3>
-	<p>Chapter conternt. Chapter conternt. Chapter conternt. ChapterChapter conternt. Chapter conternt. Chapter conternt. </p>
-	<p><a href="#top">BACK TO TOP</a></p>
-	<h3 id='c2'>Chapter 2</h3>
-	<p>Chapter conternt. Chapter conternt. Chapter conternt. Chapterconternt. </p>
-	<p><a href="#top">BACK TO TOP</a></p>
-	<h3 id='c3'>Chapter 3</h3>
-	<p>Chapter conternt. Chapter conternt. Chapter conternt. Chapter conternt. Chapter conternt. Chapter conternt. Chapter conternt. Chapter conternt. Chapter conternt. </p>
-	<p><a href="#top">BACK TO TOP</a></p>
+    <section id="hero_section" class="top_cont_outer">
+        <div class="hero_wrapper">
+            <div class="card hovercard">
+                <div class="cardheader">
+                </div>
+                <div class="avatar">
+                    <img alt="" src="img/profile-pic1.jpg">
+                </div>
+                <div class="info">
+                    <div class="title">
+                        <a target="_blank" href="">刘文榕</a>
+                    </div>
+                    <div class="desc"><b>南京艺术学院 • 工业设计学院 • 产品设计/UI</b></div>
+                    <br />
+                    <div class="desc">
+                        <p style="color: #31394c;">出生日期：1997-7-1</p>
+                        <p style="color: #31394c;"> 籍贯：山东省烟台市</p>
+                        <p style="color: #31394c;"> 微信：13287980968</p>
+                        <p style="color: #31394c;"> QQ：1425976250</p>
+                    </div>
+
+                </div>
+                <div class="bottom">
+                    <div class="underline"></div>
+                    <ul class="social_links">
+
+                    </ul>
+                </div>
+            </div>
+
+            <div class="container" style="display:none">
+                <div class="hero_section">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="top_left_cont intro zoomIn wow animated">
+                                <h2>Hi! I’m Sam Doe<br> <strong>UX DESIGNER</strong></h2>
+                                <p>
+                                    I am from planet with a passion of Web, Graphic and Interactive design. <br />
+                                    I specialise in standards compliant websites with a focus on usability. <br />
+                                    Enthusiastic about life, design and innovation.
+                                </p>
+                                <div class="underline"></div>
+                                <ul class="social_links">
+
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <header id="header_wrapper">
+        <div class="container">
+            <div class="header_box">
+
+                <nav class="navbar navbar-inverse" role="navigation">
+                    <div class="navbar-header">
+                        <button type="button" id="nav-toggle" class="navbar-toggle" data-toggle="collapse"
+                            data-target="#main-nav"> <span class="sr-only">Toggle navigation</span> <span
+                                class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span>
+                        </button>
+                    </div>
+                    <div id="main-nav" class="collapse navbar-collapse navStyle">
+                        <ul class="nav navbar-nav" id="mainNav">
+                            <li class="active"><a href="#hero_section" class="scroll-link">Home</a></li>
+                            <li><a href="#aboutUs" class="scroll-link">About Me</a></li>
+                            <li><a href="#service" class="scroll-link">Skills</a></li>
+                            <li><a href="#experience" class="scroll-link">Experience</a></li>
+                            <li><a href="#Portfolio" class="scroll-link">Works</a></li>
+                            <li><a href="#contact" class="scroll-link">Contact</a></li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <!--Header_section-->
+
+    <section id="aboutUs">
+        <!--Aboutus-->
+        <div class="inner_wrapper aboutUs-container fadeInLeft animated wow">
+            <div class="container">
+                <h2>About Me</h2>
+                <h6>种一棵树最好是十年前，其次就是现在。</h6>
+                <div class="inner_section">
+                    <div class="row" style="margin-right: 30px;margin-left: -20px;">
+                        <div class="col-lg-12 about-us" style="margin-left: 89px;">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <table class="about-us-table">
+                                        <tr>
+                                            <th id="ll">Time</th>
+                                            <th>Degree</th>
+                                            <th>School/College</th>
+                                            <th>Major</th>
+                                        </tr>
+                                        <tr>
+                                            <td>2009-2012</td>
+                                            <td>初中</td>
+                                            <td>莱阳古柳中学</td>
+                                            <td>——</td>
+                                        </tr>
+                                        <tr>
+                                            <td>2013-2015</td>
+                                            <td>高中</td>
+                                            <td>莱阳第九中学</td>
+                                            <td>美术绘画</td>
+                                        </tr>
+                                        <tr>
+                                            <td>2017-至今</td>
+                                            <td>大学</td>
+                                            <td>南京艺术学院</td>
+                                            <td>产品设计</td>
+                                        </tr>
+                                    </table>
+
+                                </div><!-- /.col-md-6 -->
+
+                                <div class="col-md-6" style="margin-top: -85px;margin-bottom:75px;">
+                                    <br />
+                                   
+                                    <p>
+                                        软件操作能力
+                                    </p><br />
+                                    <div class="barWrapper">
+                                        <span class="progressText"><B>AI</B></span>
+                                        <div class="progress">
+                                            <div class="progress-bar" role="progressbar" aria-valuenow="85"
+                                                aria-valuemin="0" aria-valuemax="100">
+                                                <span class="popOver" data-toggle="tooltip" data-placement="top"
+                                                    title="85%"> </span>
+                                            </div>
+                                        </div>
+
+                                        <div class="barWrapper">
+                                            <span class="progressText"><B>PS</B></span>
+                                            <div class="progress ">
+                                                <div class="progress-bar" role="progressbar" aria-valuenow="75"
+                                                    aria-valuemin="10" aria-valuemax="100" style="">
+                                                    <span class="popOver" data-toggle="tooltip" data-placement="top"
+                                                        title="75%"> </span>
+                                                </div>
+
+                                            </div>
+                                        </div>
+
+                                        <div class="barWrapper">
+                                            <span class="progressText"><B>犀牛</B></span>
+                                            <div class="progress">
+                                                <div class="progress-bar" role="progressbar" aria-valuenow="65"
+                                                    aria-valuemin="0" aria-valuemax="100">
+                                                    <span class="popOver" data-toggle="tooltip" data-placement="top"
+                                                        title="65%"> </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="barWrapper">
+                                            <span class="progressText"><B>Keyshot</B></span>
+                                            <div class="progress">
+                                                <div class="progress-bar" role="progressbar" aria-valuenow="55"
+                                                    aria-valuemin="0" aria-valuemax="100">
+                                                    <span class="popOver" data-toggle="tooltip" data-placement="top"
+                                                        title="55%"> </span>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div><!-- /.col-md-6 -->
+                            </div><!-- /.row -->
+                        </div><!-- /.col-lg-12 -->
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="service">
+        <div class="container">
+            <h2>Skills</h2>
+            <h6>种一棵树最好是十年前，其次就是现在。</h6>
+            <div class="service_wrapper">
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="service_icon delay-03s animated wow zoomIn photography"> <span><img
+                                    src="img/camera.png"
+                                    style="width: 38.44px;height: 31px; margin-top: 25px; margin-left: 25px;" /></span>
+                        </div>
+                        <!-- <i class="fa fa-android"></i> -->
+                        <div class="service_block">
+                            <h3 class="animated fadeInUp wow">Photography</h3>
+                            <p class="animated fadeInDown wow">照片的意义在于记录生活的美好。 </p>
+                        </div>
+                        <div class="photo_info" style="display: none;">
+                            <img src="img/photo1.jpg" style="width: 33%;height: 100%;">
+                            <img src="img/photo2.jpg" style="width: 33%;height: 100%; float: right;">
+                            <img src="img/photo3.jpg" style="width: 34%;height: 100%; float: right;">
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="service_icon icon2  delay-03s animated wow zoomIn article"> <span><i
+                                    class="fa fa-apple"></i></span> </div>
+                        <div class="service_block">
+                            <h3 class="animated fadeInUp wow"> Article</h3>
+                            <p class="animated fadeInDown wow">孤独的阅读者。 </p>
+                        </div>
+                        <div class="article_info" style="display: none; width:50%;height:35%;text-align: center;">
+                            <br />
+							<div style="margin-top:30px">
+                            <P>你背单词时，阿拉斯加的鳕鱼正跃出水面;你算数学时，太平洋彼岸的海鸥振翅掠过城市上空;</P>
+                            <P> 你晚自习时，夜空中的极光散漫了五彩斑斓; </P>
+                            <P> 你别着急，</P>
+                            <P> 在你为自己未来踏踏实实地努力时，</P>
+                            <P>那些你感觉从来不会看到的景色，</P>
+                            <P> 那些你觉得终身不会遇到的人，</P>
+                            <P> 正一步步向你走来。</P>
+							</div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="service_icon icon3  delay-03s animated wow zoomIn prize"> <span><i
+                                    class="fa fa-html5"></i></span> </div>
+                        <div class="service_block">
+                            <h3 class="animated fadeInUp wow">Prize </h3>
+                            <p class="animated fadeInDown wow">你不可能要求一个没有风暴的海洋。 </p>
+                            <div class="prize_info" style="display: none;">
+								<div style="margin-top:25px">
+                                <div style="color: #f5f5f5;">个人成绩</div>
+								<br/>
+                                <table style="margin: 0 auto;">
+                                    <tr>
+                                        <td class="prize_td">2017-2018</td>
+                                        <td class="prize_td">优秀学生奖学金一等奖</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="prize_td">2017-2018</td>
+                                        <td class="prize_td">校三好学生</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="prize_td">2017-2018</td>
+                                        <td class="prize_td">优秀共青团员</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="prize_td">2017-2018</td>
+                                        <td class="prize_td">国家励志奖学金</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="prize_td">2018-2019</td>
+                                        <td class="prize_td">优秀学生奖学金二等奖</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="prize_td">2018-2019</td>
+                                        <td class="prize_td">优秀学生干部</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="prize_td">2018-2019</td>
+                                        <td class="prize_td">国家励志奖学金</td>
+                                    </tr>
+                                </table>
+								</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="service_icon icon3  delay-03s animated wow zoomIn experience"> <span><i
+                                    class="fa fa-user"></i></span> </div>
+                        <div class="service_block">
+
+                            <h3 class="animated fadeInUp wow">Social Practice</h3>
+                            <p class="animated fadeInDown wow">选择滚烫的人生。 </p>
+                            <div class="experience_info" style="display: none;width:30%;height: 60%;top:300px; left:700px;">
+                                <img src="img/experience1.jpg" style="width: 50%;height: 100%;">
+                                <img src="img/experience2.jpg" style="width: 50%;height: 100%; float: right;">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Service-->
+
+
+
+
+    <section id="experience" class="timeline">
+        <div class="container">
+            <h2>Experience</h2>
+            <h6>种一棵树最好是十年前，其次就是现在。</h6>
+            <div class="qa-message-list" id="wallmessages">
+                <div class="message-item" id="m16">
+                    <div class="message-inner">
+                        <div class="message-head clearfix">
+                            <div class="user-detail">
+                                <h5 class="handle">南京艺术学院</h5>
+                                <div class="post-meta">
+                                    <div class="asker-meta">
+                                        <span class="qa-message-what"></span>
+                                        <span class="qa-message-when">
+                                            <span class="qa-message-when-data">20170901-20190920</span>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="qa-message-content">
+                            主修产品设计/UI。学习内容主要包括相关设计（海报设计、界面设计、UI）等
+                        </div>
+                    </div>
+                </div>
+
+                <div class="message-item" id="m9">
+                    <div class="message-inner">
+                        <div class="message-head clearfix">
+                            <div class="user-detail">
+                                <h5 class="handle">工业设计学院外联部长</h5>
+                                <div class="post-meta">
+                                    <div class="asker-meta">
+                                        <span class="qa-message-what"></span>
+                                        <span class="qa-message-when">
+                                            <span class="qa-message-when-data">20180830-20190920</span>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="qa-message-content">
+                            担任外联部长。工作内容主要负责学院相关活动赞助资金问题等。
+                        </div>
+                    </div>
+                </div>
+                <div class="message-item" id="m9">
+                    <div class="message-inner">
+                        <div class="message-head clearfix">
+                            <div class="user-detail">
+                                <h5 class="handle">创艺社</h5>
+                                <div class="post-meta">
+                                    <div class="asker-meta">
+                                        <span class="qa-message-what"></span>
+                                        <span class="qa-message-when">
+                                            <span class="qa-message-when-data">20180830-20190920</span>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="qa-message-content">
+                            担任创艺社社长。工作内容主要负责社团相关活动策划问题等。
+                        </div>
+                    </div>
+                </div>
+                <div class="message-item" id="m9">
+                    <div class="message-inner">
+                        <div class="message-head clearfix">
+                            <div class="user-detail">
+                                <h5 class="handle">工业设计学院学生会主席</h5>
+                                <div class="post-meta">
+                                    <div class="asker-meta">
+                                        <span class="qa-message-what"></span>
+                                        <span class="qa-message-when">
+                                            <span class="qa-message-when-data">20190830-2020920</span>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="qa-message-content">
+                            担任工业设计学院学生会主席。工作内容主要负责学院相关活动策划安排问题。
+                        </div>
+                    </div>
+                </div>
+
+
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio -->
+    <section id="Portfolio" class="content">
+
+        <!-- Container -->
+        <div class="container portfolio_title">
+
+            <!-- Title -->
+            <div class="section-title">
+                <h2>Works</h2>
+                <h6 style="color: #31394c;">种一棵树最好是十年前，其次就是现在。</h6>
+            </div>
+        </div>
+
+
+        <div class="portfolio-top"></div>
+
+        <div class="portfolio">
+
+            <div id="filters" class="sixteen columns">
+                <ul class="clearfix">
+                    <li>
+                        <a id="weave" href="javascript:;" data-filter=".weave" class="active">
+                            <h5>weave织</h5>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="" href="javascript:;" data-filter=".vehicle">
+                            <h5>动感车载 Dynamic Vehicle</h5>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="" href="javascript:;" data-filter=".musium">
+                            <h5>Science Andtechnology Musium科技馆</h5>
+                        </a>
+                    </li>
+
+                </ul>
+            </div>
+
+            <div class="isotope fadeInLeft animated wow grid"
+                style="background: rgba(0, 0, 0, 0.075);position: relative; overflow: hidden; margin: 0px auto;"
+                id="portfolio_wrapper">
+
+                <div class="weave" style="width:100%; margin: 0 auto;">
+                    <div class="vehicle_one" style="width:60%;margin:0 auto;">
+                        <br /><br />
+                        <p style="font-size:25px;color:#31394c;font-weight:bold;">weave织</p><br />
+                        <p>Basic Information</p>
+                        <p>Type: Video / Interactive Installation</p>
+                        <p>Tool: AI / PS / 手绘 / PR</p>
+                        <p>Team member: 4</p>
+                        <h3 style="text-align: center;color: #31394c;">整体概览</h3><br />
+                        <p>中国画的视觉呈现方式，相对于传统的动画模式来说比较独特，将视频以儿童易理解喜欢的定格动画方式来呈现，更加直接的向孩子们展示不同蜘蛛的结网过程，让孩子们在观看一个好玩的结网视频的同时能潜移默化学到一些关于蜘蛛之最的相关基本知识。
+                        </p>
+                        <br />
+                        <img src="img/img1.png" />
+                        <br /><br />
+                        <h3 style="text-align: center;color: #31394c;">画风展示</h3><br />
+                        <div style="display:flex;align-items:flex-end;justify-content:center;">
+                            <img src="img/img3.png" width="30%" />
+                            <img src="img/img4.png" width="30%" />
+                            <img src="img/img2.png" width="30%" />
+                        </div>
+                        <br />
+                        <h3 style="text-align: center;color: #31394c;">效果展示</h3><br />
+                        <p>中国画的视觉呈现方式，相对于传统的动画模式来说比较独特，将视频以儿童易理解喜欢的定格动画方式来呈现，更加直接的向孩子们展示不同蜘蛛的结网过程，让孩子们在观看一个好玩的结网视频的同时能潜移默化学到一些关于蜘蛛之最的相关基本知识。
+                        </p>
+                        <br />
+                        <div style="display:flex;justify-content:space-around;margin-bottom:10px;">
+                            <img src="img/img6.png" width="20%" height="100%" />
+                            <img src="img/img7.png" width="20%" height="100%" />
+                            <img src="img/img8.png" width="20%" height="100%" />
+                        </div>
+                        <div style="display:flex;justify-content:space-around;margin-bottom:10px;">
+                            <img src="img/img9.png" width="20%" height="100%" />
+                            <img src="img/img10.png" width="20%" height="100%" />
+                            <img src="img/img11.png" width="20%" height="100%" />
+                        </div>
+                        <br />
+                        <h3 style="text-align: center;color: #31394c;">视频展示</h3><br />
+
+                        <div class="video_file" style="display:flex;justify-content:space-around;margin-bottom:10px;">
+                            <button id="video_btn">播放/暂停</button>
+                            <video name="media" id="video" preload="auto">
+                                <source src="video/weave_video.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                    </div>
+                </div>
+                <div class="vehicle" style="width:100%; margin: 0 auto;">
+                    <div class="vehicle_one" style="width:60%;margin:0 auto;">
+                        <br /><br />
+                        <p style="font-size:25px;color:#31394c;font-weight:bold;">dynamic vehicle</p><br />
+                        <p style="font-size:25px;color:#31394c;font-weight:bold;">动感车载</p><br />
+                        <p>Basic Information</p>
+                        <p>Type: Video / Interactive Installation</p>
+                        <p>Tool: AI / PS</p>
+                        <p>Team member: 1</p>
+                        <p>汽车仪表盘的发展演变历程从传统的物理仪表到现今的全液晶仪表,在外观尺寸、信息交互量、交互方式等方面，汽车仪表盘正在发生着持续性的改变物理仪表盘---- 物理仪表盘+交互式屏幕</p>
+                        <br />
+                        <h3 style="text-align: center;color: #31394c;">效果展示</h3><br />
+                        <img src="img/vehicle_img1.png" />
+                        <p>Setp1:主界面</p>
+                        <br /><br />
+                        <img src="img/vehicle_img2.png" />
+                        <p>Setp2:功能界面</p>
+                        <br /><br />
+                        <img src="img/vehicle_img3.png" />
+                        <p>Setp3:保养手册界面</p>
+                        <br /><br />
+                        <img src="img/vehicle_img4.png" />
+                        <p>Setp4:故障灯识别界面</p>
+                        <br /><br />
+                        <img src="img/vehicle_img5.png" />
+                        <p>Setp5:用户手册界面</p>
+                        <br /><br />
+                        <h3 style="text-align: center;color: #31394c;">效果展示</h3><br />
+                        <img src="img/vehicle_img6.png" />
+                        <br /><br />
+                    </div>
+                </div>
+                <div class="vehicle museum" style="width:100%; margin: 0 auto;">
+                    <div class="vehicle_one" style="width:60%;margin:0 auto;">
+                        <br /><br />
+                        <p style="font-size:25px;color:#31394c;font-weight:bold;">science and technology museum</p>
+                        <br />
+                        <p style="font-size:25px;color:#31394c;font-weight:bold;">科技馆 </p><br />
+                        <p>Basic Information</p>
+                        <p>Type: Video / Interactive Installation</p>
+                        <p>Tool: AI / PS</p>
+                        <p>Team member: 4</p>
+                        <h3 style="text-align: center;color: #31394c;">科技馆的导视系统设计</h3><br />
+                        <p>针对于现有网站进行改进，突出科技馆特色种类分明，可以更加直观的精确介绍展区概况。</p>
+                        <br />
+                        <img src="img/museum_img1.png" />
+                        <p>Step1：网站首页</p>
+                        <br />
+                        <img src="img/museum_img2.png" style="width: 737.39px;" />
+                        <img src="img/museum_img3.png" />
+                        <p> Step2: 楼层地图</p>
+                        <br />
+                        <img src="img/museum_img4.png" style="width: 737.39px;" />
+                        <img src="img/museum_img5.png" />
+                        <br /><br />
+                        <h3 style="text-align: center;color: #31394c;">导视系统设计</h3><br />
+                        <img src="img/museum_img6.png" style="width: 737.39px;" />
+                        <p>Step3: logo</p>
+                        <br />
+                        <img src="img/museum_img7.png" style="width: 737.39px;" />
+                        <p>Step 4: VIS</p>
+                        <br />
+                        <img src="img/museum_img8.png" style="width: 737.39px;" />
+                        <p>Step 5: VIS</p>
+                        <br /><br />
+                    </div>
+                </div>
+            </div>
+            <div class="portfolio_btm"></div>
+            <div id="project_container">
+                <div class="clear"></div>
+                <div id="project_data"></div>
+            </div>
+
+
+    </section>
+
+    <footer class="footer_wrapper" id="contact">
+        <div class="container">
+            <section class="page_section contact" id="contact">
+                <div class="contact_section">
+                    <h2>Contact Me</h2>
+                    <h6>种一棵树最好是十年前，其次就是现在。</h6>
+
+                </div>
+                <div class="row">
+                    <div class="box">
+                        <span>Basic Contact</span><br /><br />
+                        <div class="line"></div><br />
+                        <p>电话:13287980968</p>
+                        <p>微信:13287980968</p>
+                        <p>邮箱:1425976250@qq.com</p>
+                    </div>
+                    <div class="box1">
+                        <span>Social Media</span><br /><br />
+                        <div class="line1"></div><br />
+                        <ul class="social_links">
+                            <li class="twitter animated bounceIn wow delay-02s"><a href="javascript:void(0)"><i
+                                        class="fa fa-twitter"></i></a></li>
+                            <li class="facebook animated bounceIn wow delay-03s"><a href="javascript:void(0)"><i
+                                        class="fa fa-facebook"></i></a></li>
+                            <li class="pinterest animated bounceIn wow delay-04s"><a href="javascript:void(0)"><i
+                                        class="fa fa-pinterest"></i></a></li>
+                            <li class="gplus animated bounceIn wow delay-05s"><a href="javascript:void(0)"><i
+                                        class="fa fa-google-plus"></i></a></li>
+                        </ul>
+                    </div>
+                    <!-- <div class="col-lg-4 wow fadeInLeft">
+                        <div class="contact_info">
+                            <div class="detail">
+                                <h4>电话</h4>
+                                <p>13287980968</p>
+                            </div>
+                            <div class="detail">
+                                <h4>微信</h4>
+                                <p>13287980968</p>
+                            </div>
+                            <div class="detail">
+                                <h4>邮箱</h4>
+                                <p>1425976250@qq.com</p>
+                            </div>
+                        </div>
+                    </div> -->
+                    <div class="col-lg-8 wow fadeInLeft delay-06s">
+
+                    </div>
+                </div>
+            </section>
+        </div>
+        <div class="opacity60" style="display: none;"></div>
+    </footer>
+
+    <script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/jquery-scrolltofixed.js"></script>
+    <script type="text/javascript" src="js/jquery.nav.js"></script>
+    <script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+
+    <script src="js/fancybox/jquery.fancybox.pack.js" type="text/javascript"></script>
+    <script type="text/javascript" src="js/wow.js"></script>
+    <script src="contact/jqBootstrapValidation.js"></script>
+    <script src="contact/contact_me.js"></script>
+    <script src="js/classie.js"></script>
+    <script type="text/javascript" src="js/custom.js"></script>
 </body>
+
 </html>
-
-
-
-
